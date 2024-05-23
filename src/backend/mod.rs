@@ -6,8 +6,8 @@
 
 use std::collections::HashSet;
 
-use iced_graphics::core::text::Paragraph;
-use iced_widget::{
+use cosmic::iced::advanced::graphics::core::text::Paragraph;
+use cosmic::iced_widget::{
     canvas,
     core::{
         alignment::{Horizontal, Vertical},
@@ -276,7 +276,7 @@ where
         };
 
         let mut p = B::Paragraph::default();
-        p.update(iced_widget::core::text::Text {
+        p.update(cosmic::iced_widget::core::text::Text {
             content: text,
             bounds,
             size: self.backend.default_size(),
